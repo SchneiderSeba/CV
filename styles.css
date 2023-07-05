@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+a {
+    text-decoration: none;
+    color: #0a0a23;
+}
+header{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./pexels-dexter-fernandes-2646237.jpg);
+    background-size: cover;
+    background-position: center;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    font-size: 2.5rem;
+    font-family: 'Rubik Dirt', cursive;
+}
+
+.section-black{
+    color: white;
+    background-color: #1b1b32;
+}
+.section-banca {
+    color: #1b1b32;
+    background-color: white;
+}
+
+.section-titulo {
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Rubik Dirt', cursive;
+}
+.texto-negro {
+    color: black;
+}
+.texto-blanco {
+    color: white;
+}
+.section-descripcion {
+    font-size: 1.2rem;
+    color: #584e4e;
+}
+
+                        /* NAV-BAR */
+#logo {
+    font-size: 25px;
+    font-weight: 100;
+    color: aliceblue;
+}
+.navbar {
+    padding: 2rem;
+}
+.navbar li .nav-link{
+    color: #fff;
+}
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+    .navbar-brand {
+        display:none;
+    }
+}
+
+                    /* HERO */
+.hero {
+    min-height: 450px;
+    text-align: center;
+    color: aliceblue;
+}
+.hero-principal {
+    padding: 3rem; 
+}
+.hero-principal h2 {
+    font-size: 1.5rem;
+    color: antiquewhite;
+}
+.hero-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px;
+}
+                    /* SECTION ABOUTE ME */
+
+.about-me {
+    height: 100vh;
+    width: 100%;
+    padding: 10px;
+    /*background-image: url(./pexels-dexter-fernandes-2646237.jpg);
+    background-size: cover;
+    background-position: center;*/
+  
+}
+.about-me .contenedor {
+    text-align: center;
+}
+.about-me h1 {
+    color: aliceblue;
+}
+.about-me p {
+    color: antiquewhite;
+}
+
+                    /* SECTION EXP */
+
+.experiencia {
+    /*height: 100vh;
+    width: 100%;
+    background-image: url(./pexels-dexter-fernandes-2646237.jpg);
+    background-size: cover;
+    background-position: center;*/
+    padding: 40px 40px 60px 40px;
+}
+.experiencia .columna {
+    padding: 20px;
+    border: 2px solid #8080804d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;
+}
+.experiencia .columna:hover {
+    color: white;
+    background-color: #0a0a23;
+}
+.experiencia i {
+    font-size: 2.5rem;
+    color: #7ade30;
+    background-color: #0a0a23;
+    padding: 8px 19px;
+    border-radius: 50%;
+    
+}
+.exp-titulo {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.badges-contenedor {
+    display: flex;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+
+}
+.badge {
+    margin: 5px;
+}
+
+@media screen and (max-width: 449px) {
+    .badge {
+      font-size: 14px;
+      margin: 2px;
+    }
+    .exp-titulo {
+      font-size: 18px;
+      margin: 8px 0;
+    }
+    .projects .columna {
+      padding: 10px;
+      border: 1px solid #8080804d;
+    }
+    .projects i {
+      font-size: 2rem;
+      padding: 4px 8px;
+    }
+    .badges-contenedor {
+      font-size: 18px;
+      margin: 6px 0;
+    }
+  }
+  
+
+                    /* SECTION PROJECTS */
+
+.projects {
+    padding: 40px;
+}
+.projects img {
+    height: 100%;
+    width: auto;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.2s ease;
+}
+.projects-contenedor {
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+.proyecto {
+    position: relative;
+}
+.projects .proyecto img {
+    height: 300px; /* Elige la altura que desees */
+    width: 100%; /* Para que el ancho se ajuste correctamente */
+  }  
+.overlay {
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.overlay p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.proyecto:hover .overlay {
+    opacity: 1;
+}
+.proyecto:hover img {
+    opacity: 0.2;
+}
+.overlay .iconos-contenedor {
+    display: flex;
+}
+.overlay i {
+    color: black;
+    font-size: 60px;
+    margin: 10px;
+}
+.projects a button {
+    font-size: 1.1rem;
+    margin: 20px;
+    background-color: transparent;
+    color: #0a0a23;
+    border-color: #0a0a23;
+}
+.projects a button:hover {
+    background-color: #0a0a23;
+    color: white;
+    border-color: #0a0a23;
+}
+
+                    /* SECTION SOCIAL */
+
+.social-media {
+    height: 100vh;
+    width: 100%;
+    background-image: url(./pexels-dexter-fernandes-2646237.jpg);
+    background-size: cover;
+    background-position: center;
+}
